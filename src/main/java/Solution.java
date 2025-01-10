@@ -13,11 +13,6 @@ class Solution
 
     public int powOf2(int pow)
     {
-        int start = 1;
-        for (int i = 0; i < pow; i++)
-        {
-            start *= 2;
-        }
-        return start;
+        return 1 << pow;
     }
 }
