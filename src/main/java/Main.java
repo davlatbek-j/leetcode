@@ -2,9 +2,11 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Solution smallestNumber = new Solution();
+        int[] a = new int[]{4, 1, 3, 3};
 
-        System.out.println("pow = " + smallestNumber.powOf2(10));
+        CountBadPairs countBadPairs = new CountBadPairs();
+        long l = countBadPairs.countBadPairs(a);
+        System.out.println(l);
     }
 }
 /*
