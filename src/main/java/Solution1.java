@@ -1,4 +1,4 @@
-class Solution
+class Solution1
 {
     public int smallestNumber(int n)
     {
