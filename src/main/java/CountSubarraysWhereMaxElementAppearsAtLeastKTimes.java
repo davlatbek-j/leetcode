@@ -7,32 +7,6 @@ public class CountSubarraysWhereMaxElementAppearsAtLeastKTimes
     {
         System.out.println(getMD5Hash("@hacker"));
     }
-}
-
-class Solution
-{
-    //        [1,3,2,3,3]   k=2 , max=3
-    // index to = 5-2 = 3
-    // length = 5
-    public long countSubarrays(int[] nums, int k)
-    {
-        long count = 0;
-        while (k < nums.length)
-        {
-
-            k++;
-        }
-        return 0;
-    }
-
-    public int findMax(int[] nums)
-    {
-        int max = nums[0];
-        for (int num : nums)
-            max = Math.max(num, max);
-
-        return max;
-    }
 
     public static String getMD5Hash(String input)
     {
@@ -60,4 +34,62 @@ class Solution
             throw new RuntimeException(e);
         }
     }
+}
+
+class Solution
+{
+    //        [1,3,2,3,3]   k=2 , max=3
+    // index to = 5-2 = 3
+    // length = 5
+    public long countSubarrays(int[] nums, int k)
+    {
+        long count = 0;
+        while (k < nums.length)
+        {
+
+            k++;
+        }
+        return 0;
+    }
+
+    public int findMax(int[] nums)
+    {
+        int max = nums[0];
+        for (int num : nums)
+            max = Math.max(num, max);
+
+        return max;
+    }
+
+    public void separateSubs(int[] nums)
+    {
+//        [1,3,2,3,3]
+//        len = 5
+        int max = 0;
+        int capacity = 2;
+        int count = 0;
+
+        while (capacity <= nums.length)
+        {
+
+            for (int i = 0; i < nums.length; i++)
+            {
+                if (i < capacity && nums[i] == max)
+                    count++;
+            }
+            capacity++;
+        }
+
+    }
+
+    public void foo(int[] nums, int k)
+    {
+        int[] temp = new int[k];
+
+        for (int i = 0; i < nums.length; i++)
+        {
+
+        }
+    }
+
 }
