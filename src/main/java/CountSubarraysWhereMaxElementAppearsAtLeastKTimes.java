@@ -84,6 +84,7 @@ class Solution
 
     public void foo(int[] nums, int k)
     {
+        // okokoko
         int[] temp = new int[k];
 
         for (int i = 0; i < nums.length; i++)
@@ -93,5 +94,3 @@ class Solution
     }
 
 }
-
-//jahdiwhdi
